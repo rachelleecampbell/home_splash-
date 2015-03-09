@@ -1,0 +1,79 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Base Styles ---------------*/
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background-color:#002393; 
+  color: white;
+}
+
+#main {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  line-height: 1em;
+  text-shadow: 0 1px 0 rgba(0,0,0,.75);
+}
+
+html {
+background: url"assets/images/tour_de_france.jpg";
+}
+
+#clock {
+font: bold 'Archivo Narrow', sans-serif;
+font-size: 9vw;
+letter-spacing: -3px;
+color: white;
+position: fixed;
+top: 10%;
+text-align: center;
+width: 100%;
+
+}
+
+#clock a:visited {
+  color: #FABB00;
+}
+
+#clock a:hover {
+  color: #FABB00;
+}
+
+#greeting {
+  font: bold 'Archivo Narrow', sans-serif;
+  color: white;
+  font-size: 3vw;
+  letter-spacing: 5px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  top: 35%;
+}
+
+#quote {
+  font: 1.7vw 'Archivo Narrow', sans-serif;
+  color: white;
+  position: fixed;
+  top: 80%;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
+  width: 64%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 18%;
+}
+
+
+
+
+

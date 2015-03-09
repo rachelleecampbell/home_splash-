@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /*
+ *= require font-awesome
+ */
+
+$minor-sized: .7em;
+
+html {
+  font-family: Arial;
+  font-size: 20px;
+  color: white;
+}
+
+body {
+background: image-url("tour_landscape.jpg") no-repeat center center fixed;
+-webkit-brackground-size: cover;
+background-size: cover;
+-moz-background-size: cover;
+}
+
+#clearance_links {
+  font-size: $minor-sized;
+  padding: $minor-sized;
+
+  a{
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+}
+
+
+#clearance {
+  background-color: rgba(0,0,0,0.2);
+  padding: 5em 1em 5em 1em;
+  border-radius: 3px;
+  margin: 0 auto;
+  text-align: center;
+  width: 20em;
+
+  a {
+    color: #eee;
+    text-decoration: none;
+    display: block;
+
+    div {
+      padding-top: 3em;
+    }
+  }
+}
+// #border {
+// position: relative;
+// background-image: linear-gradient(to right, blue, blue 25%, white 25%, white 50%, firebrick 50%, firebrick 75%, #FABB00 75%);
+// height: .2em;
+// margin-bottom: 0px;
+// background-size: 100% 5px;
+// background-position: 50% 100%;
+// background-repeat: no-repeat;
+// top: -1em;
+// }
+
+
+#top, #bottom {
+  background-image: linear-gradient(to right, blue, blue 25%, white 25%, white 50%, firebrick 50%, firebrick 75%, #FABB00 75%);
+  position: fixed;
+  }
+ #left {
+  background-image: linear-gradient(to right, blue, blue 25%, white 25%, white 50%, firebrick 50%, firebrick 75%, #FABB00 75%);
+  position: fixed;
+  -webkit-transform: rotate( 180deg )
+
+ }
+    
+#top, #bottom {
+    left: 0; right: 0;
+    height: 5px;}
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+#footer {
+  // border-top: 02px solid #FABB00;
+  position: fixed;
+  bottom: -1px;
+  height: 3em;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  text-align: center;
+  padding-top: 1em;
+  // padding-bottom: 1.5em;
+  left: 0;
+  font-family: 'Archivo Narrow', sans-serif;
+  color: white;
+  font-size: 1em;
+
+   a {
+  text-decoration: none;
+  color: white;
+
+   :visited {
+  color: white;
+}
+ :hover {
+   color: #FABB00;
+    }
+  }
+}
+
