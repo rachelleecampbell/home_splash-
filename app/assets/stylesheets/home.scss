@@ -22,16 +22,16 @@ a {
   width: 100%;
   position: absolute;
   line-height: 1em;
-  text-shadow: 0 1px 0 rgba(0,0,0,.75);
+  text-shadow: 0 1px 0 rgba(0,0,0,.90);
 }
 
 html {
-background: url"assets/images/tour_de_france.jpg";
 }
 
 #clock {
-font: bold 'Archivo Narrow', sans-serif;
-font-size: 9vw;
+font-family: 'Open Sans Condensed', sans-serif;
+font-weight: 700;
+font-size: 12vw;
 letter-spacing: -3px;
 color: white;
 position: fixed;
@@ -50,9 +50,10 @@ width: 100%;
 }
 
 #greeting {
-  font: bold 'Archivo Narrow', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
   color: white;
-  font-size: 3vw;
+  font-size: 5vw;
   letter-spacing: 5px;
   position: fixed;
   text-align: center;
@@ -61,10 +62,11 @@ width: 100%;
 }
 
 #quote {
-  font: 1.7vw 'Archivo Narrow', sans-serif;
+  font: 2vw 'Open Sans Condensed', sans-serif;
   color: white;
   position: fixed;
   top: 80%;
+  padding-bottom: 10px;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
   width: 64%;
