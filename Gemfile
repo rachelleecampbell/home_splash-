@@ -58,12 +58,19 @@ end
 
 
 group :development do
- # adding mail opening abilities
- gem 'letter_opener'
-end
+# adding mail opening abilities
+gem 'letter_opener'
 
 # Quiet those assets down!!
 gem 'quiet_assets'
+end
+
+group :production do
+ gem'pg'
+ gem 'rails_12factor'
+
+end
+
 
 
 
