@@ -36,6 +36,9 @@ gem 'stamp'
 # We don't want webrick
 gem 'thin'
 
+gem 'font-awesome-rails'
+
+
 group :development, :test do
 
 
@@ -43,7 +46,7 @@ group :development, :test do
 gem 'awesome_print'
   
 # adding font-awesomeness
-gem 'font-awesome-rails'
+
 
 
 # Call 'byebug' anywhere in the code to stop execution and get a debugger console
