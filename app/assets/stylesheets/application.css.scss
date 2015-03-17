@@ -21,17 +21,17 @@
 $minor-sized: .7em;
 $rounded: 3px;
 
-html {
+
+
+body {
   font-family: 'Open Sans Condensed', sans-serif;  
   font-size: 20px;
   color: white;
-}
+  background: image-url("tour.jpg") no-repeat center center fixed;
 
-body {
-background: image-url("rain.jpg") no-repeat center center fixed;
--webkit-brackground-size: cover;
-background-size: cover;
--moz-background-size: cover;
+  -webkit-brackground-size: cover;
+  background-size: cover;
+  -moz-background-size: cover;
 }
 
 #clearance_links {
@@ -92,16 +92,7 @@ background-size: cover;
   border-radius: $rounded;
   text-align: center;
 }
-// #border {
-// position: relative;
-// background-image: linear-gradient(to right, blue, blue 25%, white 25%, white 50%, firebrick 50%, firebrick 75%, #FABB00 75%);
-// height: .2em;
-// margin-bottom: 0px;
-// background-size: 100% 5px;
-// background-position: 50% 100%;
-// background-repeat: no-repeat;
-// top: -1em;
-// }
+
 
 
 #bottom {
