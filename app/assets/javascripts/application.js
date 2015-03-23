@@ -14,3 +14,40 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+ $(document).ready(function() {
+
+  setInterval('updateClock()', 1000);
+});
+
+
+function updateClock() {
+    var currentTime = new Date();
+    var currentHours = pad(currentTime.getHours());
+    var currentMins = pad(currentTime.getMinutes());
+    var currentSecs = pad(currentTime.getSeconds());
+    var currentDay = currentTime.getDate();
+    var currentMonth = currentTime.getMonth();
+
+    var timeOfDay = (currentHours < 12) ? "AM" : "PM";
+
+    var twelveHour = pad(currentHours % 12);
+
+    twelveHour = (twelveHour === 0) ? "12" : twelveHour ;
+    
+    var currentTimeString = twelveHour + ":" + currentMins;
+    // var currentDateString = currentMonth + "/" + currentDay;
+
+    $("#clock").html(currentTimeString);
+    $("#date").html(currentDateString);
+ }
+
+ function pad(number) {
+     var paddedNumber;
+     if (number < 10) {
+        paddedNumber = "0" + number;
+    } else {
+         paddedNumber = number;
+    }
+     return paddedNumber;
+ }
